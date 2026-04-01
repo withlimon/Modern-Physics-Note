@@ -20,7 +20,9 @@ jobs:
       - name: Convert to PDF via Pandoc Docker
         uses: docker://pandoc/latex:latest
         with:
-          args: ./modern_physics_notes.md -o ./modern_physics_notes.pdf
+          args: >-
+            sh -c "apt-get update && apt-get install -y texlive-latex-extra && 
+            pandoc ./modern_physics_notes.md -o ./modern_physics_notes.pdf"
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
