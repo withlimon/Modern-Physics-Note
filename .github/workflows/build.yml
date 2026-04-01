@@ -1,6 +1,6 @@
 name: Build And Release
-# last update,i tried 7 to 11 30 for4 hr 30 min.So
-# Not agin in my life i will use ai or printed note
+# last update,i tried 7 to 11 : 50 for4 hr 50 min.but successful at all
+
 
 on:
   push:
