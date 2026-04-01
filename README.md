@@ -1,3 +1,4 @@
+![Bohr GIF from giffy.com](bohr_gif.gif)
 # Modern Physics Open Source Note
 > Contribute to complete the note.You will given proper credit.
 ## Download or Read Note
