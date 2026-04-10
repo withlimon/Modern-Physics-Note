@@ -30,7 +30,7 @@ jobs:
         run: pip install markdown-convert
 
       - name: Convert to PDF
-        run: markdown-convert ./demo.md --out=./demo.pdf
+        run: markdown-convert ./book.md --out=./demo.pdf
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
