@@ -30,13 +30,13 @@ jobs:
         run: pip install markdown-convert
 
       - name: Convert to PDF
-        run: markdown-convert ./modern_physics_notes.md --out=./modern_physics_notes.pdf
+        run: markdown-convert ./demo.md --out=./demo.pdf
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: Modern_Physics_Notes
-          path: ./modern_physics_notes.pdf
+          path: ./demo.pdf
 
       - name: Set BUILD_DATE environment variable
         run: echo "BUILD_DATE=$(date --rfc-3339=date)" >> $GITHUB_ENV
@@ -51,6 +51,6 @@ jobs:
             ${{ github.event.inputs.release_note }}
           draft: false
           prerelease: false
-          files: ./modern_physics_notes.pdf
+          files: ./demo.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
